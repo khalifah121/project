@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: blue;*/
+    background-image: url(unsplash3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login{
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 300px;
+    height: min-content;
+    padding: 25px;
+    border-radius: 20px;
+    
+}
+.login h3{
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: white;
+}
+.login form{
+    font-size: 15px;
+}
+.login form .form-group{
+    margin-bottom: 10px;
+}
+.login form .form-control{
+    border-radius: 15px;
+}
+.login form input[type="submit"]{
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius:20px;
+}
+.login form .form-label{
+    color: white;
+}
+.login form .form-check-label{
+    color: white;
+}
+span{
+    margin-left: 20px;
+    margin-top:30px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: green;
+}

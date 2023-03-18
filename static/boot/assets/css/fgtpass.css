@@ -1,0 +1,50 @@
+body{
+    padding-top: 100px;
+    /*background-image: url(unsplash3.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fgtpass{
+    margin: 0 auto;
+    max-width: 200px;
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom:5px;
+}
+.fgtpass h3{
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+    margin-left: 19px;
+}
+.form-control{
+    border-radius: 20px;
+}
+.fgtpass input[type="submit"]{
+    border-radius: 20px;
+}
+.fgtpass .up{
+    color: white;
+    margin-left: 100px;
+    text-decoration: none; 
+}
+.fgtpass .up:hover{
+    color: green;
+}
+span{
+    margin-left: 50px;
+    margin-top:30px;
+    color: white;
+}
+.fgtpass .but{
+    color: white;
+    text-decoration: none;
+}
+.fgtpass .but:hover{
+    color: green;
+}
+

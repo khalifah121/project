@@ -1,0 +1,50 @@
+
+body{
+    padding-top: 100px;
+    background-image: url(boot/assets/img/unsplash3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-signup{
+    margin: 0 auto;
+    max-width: 400px;
+    background-color:rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom:5px;
+}
+.form-signup h3{
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+    margin-left: 19px;
+}
+.form-control{
+    border-radius: 20px;
+}
+.form-signup input[type="submit"]{
+    border-radius: 20px;
+}
+.form-signup a{
+    text-decoration: none;
+}
+.form-signup a:hover{
+    color: green;
+}
+label{
+    color: white;
+}
+.form-signup input[type="checkbox"]{
+    color: white;
+}
+span{
+    margin-left: 50px;
+    margin-top:30px;
+    color: white;
+}
+.form-signup .but{
+    color: white;
+}

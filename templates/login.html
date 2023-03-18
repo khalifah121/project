@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--css file-->
+    <link rel="stylesheet" href=" {% static 'boot/assets/css/login.css' %} ">
+</head>
+<body style="background-image: url({% static 'boot/assets/img/unsplash3.jpg'%});">
+    <div class="login">
+        <h3 class="text-center">Log IN</h3>
+
+        <form class="needs-validation" method="POST">
+           {% csrf_token %}
+
+            <div class="form-group was-validated">
+                <label class="form-label" for="email">Username</label>
+                <input class="form-control" name ='username' type="text" id="email" required>
+                <div class="invalid-feedback">
+                    Please enter your username
+                   </div>
+            </div>
+
+            <div class="form-group was-validated">
+                <label  class="form-label" for="password">Password</label>
+                <input class="form-control" name ='password' type="password" id="password" required>
+                <div class="invalid-feedback">
+                 Please enter your password
+                </div>
+                <a href="{% url 'reset_password' %}">forgot password?</a><br>
+            </div>
+            
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label class="form-check-label" for="check" ><bold>Remember me</bold></label>
+            </div>
+
+            <input class="btn btn-success w-100" type="submit" value="SIGN IN">
+
+
+            <span>Not a member?</span>&nbsp;&nbsp;<a href="{% url 'register' %}">Signup now</a>
+            
+        
+               
+            
+        </form>
+    </div>
+
+    
+</body>
+</html>
